@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  nav > ul{
+    display: flex;
+    font-size: 17px;
+    list-style: none;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    width: 100%;
+  }
+  nav > ul > li:last-child {
+      margin-right: 5%;
+  }
+nav > ul > li:first-child {
+    margin-right: auto;
+    margin-left: 5%;
+    font-size: 30px;
+    font-style:oblique;
+  }
+  
+nav > ul > li > a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#sectionOne, #sectionTwo, #sectionThree, #sectionThreeContact, #spannerSection, #workSection, #videoSection {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#sectionOne div, #sectionTwo div, #sectionThree div, #sectionThreeContact div, #spannerSection div, #workSection div, #videoSection div {
+    height: 700px;
+    width: 50%;
+    padding: 10px;
+}
+
+#videoSectionHeading {
+    text-align: center;
+}
+
+#spannerSection div {
+    height: 200px;
+}
+
+#greeting, #introduction, #contactMe, #spannerHeading, #spannerDisplay, #workContentHolder, #workTextHolder, #videoSectionHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 50px;
+}
+
+#workTextHolder {
+    font-size: 20px;
+}
+
+#spanner {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+#spanner:focus {
+    outline: none;
+}
+
+#workHeading {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#workHeadingContent {
+    width: 80%;
+    font-size: 23px;
+    text-align: center;
+}
+
+iframe {
+    width: 400px;
+    height: 450px;
+}
+
+
+#spannerHeading {
+    font-size: 20px;
+}
+
+#greeting > p > a {
+    font-size: 30px;
+}
+
+#workLinks {
+    text-decoration: none;
+    color: black;
+}
+
+#workLinks:hover {
+    color: grey;
+}
+
+#displayPhoto, #laptopPhoto, #displayVideo {
+    display: flex;
+    justify-content: center;
+}
+
+#displayVideo {
+    align-items: center;
+}
+
+#youtubeVideo {
+    width: 700px;
+    height: 400px;
+}
+
+#introduction, #contactMe {
+    font-size: 23px;
+}
+
+#introductionContent {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#sectionTwo {
+    background-color: #d6d6d6;
+}
+
+#sectionThree {
+    margin-top: 50px;
+    background-color: #bfbfbf;
+}
+
+#sectionThreeContact {
+    background-color: #bfbfbf;
+}
+
+#sectionThree div {
+    height: 400px;
+}
+
+#formInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formLink {
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+}
+
+#contactForm {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+
+#contactForm > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+#formHeading {
+    font-size: 30px;
+}
+
+#contactForm > div > #emailLabel, #nameLabel, #phoneLabel, #addressLabel, #queryLabel {
+    font-size: 25px;
+}
+
+#contactForm > div > #emailInput, #nameInput, #phoneInput, #addressInput, #queryInput {
+    height: 20px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 20%;
+    font-family: sans-serif;
+    background-color: #bfbfbf;
+}
+
+#contactForm > div > #emailInput:focus, #nameInput:focus, #phoneInput:focus, #addressInput:focus, #queryInput:focus {
+    outline: none;
+}
+
+#queryInput {
+    margin-top: 100px;
+    height: 150px;
+}
+
+::placeholder {
+    color: #d4d4d4;
+}
+
+#submitButton {
+    margin-top: 200px;
+    font-size: 30px;
+    width: 80%;
+    border: none;
+    background-color: black;
+    color: white;
+    line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    transition: 1s;
+
+}
+
+#submitButton:hover {
+    background-color: white;
+    color: black;
+    transition: 2s;
+
+}
+
+#resume {
+    height: 100%;
+}
+
+#formSubmitted {
+    color: green;
+    display: none;
+}
+
+footer  {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    #sectionOne, #sectionTwo, #sectionThree, #sectionThreeContact, #workSection, #videoSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #sectionOne div, #sectionTwo div {
+        height: 100%;
+    }
+
+    #myImage, #laptopPhotoImage {
+        width: 120%;
+        height: 80vw;
+    }
+
+    #introductionContent {
+        margin-left: 0;
+        margin-right: 0;
+        width: 150%;
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+
+
+}

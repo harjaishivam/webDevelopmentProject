@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="shivam" content="final project submission">
+
+        <link rel="stylesheet" href="css/css_SHa51823.css">
+
+        <script src="script/js_SHa51823.js"></script>
+
+        <title>
+            CONTACT ME
+        </title>
+
+        <link rel="shortcut icon" type="image/png" href="images/contact.png"/>
+
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">SHIVAM HARJAI</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2_SHa51823.html">Work</a></li>
+                <li><a href="page3_SHa51823.html">MY CV</a></li>
+                <li><a href="page4_SHa51823.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <section id="sectionThreeContact">
+            <div id="contactMe">
+                <h1>CONTACT ME</h1>
+                <p>Phone Number: +1 604-762-7965</p>
+                <p>Email: harjaishivam@gmail.com</p>
+                <p><a href="https://github.com/harjaishivam/" id="workLinks" target="_blank">My GitHub</a></p>
+            </div>
+            <div id="formInfo">
+                
+                <form id="contactForm" onsubmit="return false">
+                    <div>
+                        <label for="formSubmitted" id="formSubmitted">Thank you for submitting! I'll be in touch shortly.</label>
+                    </div>
+                    <div>
+                        <label for="formHeading" id="formHeading">Please Enter your details, and I will contact you shortly: </label>
+                    </div>
+                    <div>
+                        <label for="nameLabel" id="nameLabel">Name*</label>
+                        <input type="text" name="nameInput" id="nameInput" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        
+                        <label for="emailLabel" id="emailLabel">Email*</label>
+                        <input type="email" name="emailInput" id="emailInput" placeholder="some@example.com" required>
+                    </div>
+                    <div>
+                        
+                        <label for="phoneLabel" id="phoneLabel">Phone</label>
+                        <input type="number" name="phoneInput" id="phoneInput" placeholder="12345">
+                    </div>
+
+                    <div>
+                        
+                        <label for="addressLabel" id="addressLabel">Address</label>
+                        <input type="text" name="addressInput" id="addressInput">
+                    </div>
+
+                    <div>
+                        <label for="queryLabel" id="queryLabel">Query</label>
+                        <textarea name="queryInput" id="queryInput" cols="20" rows="10" placeholder="Enter your message here"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Submit Form" width="100%" id="submitButton" onclick="processForm(this.form)">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>Website designed and developed by Shivam Harjai. &copy; 2021 Shivam Harjai</p>
+        </footer>
+    </body>
+</html>

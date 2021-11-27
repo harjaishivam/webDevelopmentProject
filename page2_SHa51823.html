@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="shivam" content="final project submission">
+
+        <link rel="stylesheet" href="css/css_SHa51823.css">
+
+        <script src="script/js_SHa51823.js"></script>
+
+        <title>
+            WORK
+        </title>
+
+        <link rel="shortcut icon" type="image/png" href="images/work.png"/>
+
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">SHIVAM HARJAI</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2_SHa51823.html">Work</a></li>
+                <li><a href="page3_SHa51823.html">MY CV</a></li>
+                <li><a href="page4_SHa51823.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <article>
+            <section id="workHeading">
+                <div id="workHeadingContent">
+                    <p>On this page, I will display some of the work that I have done throught the years. 
+                        This also includes some personal projects that I have made, and some freelance work.
+                        I have also designed some websites for various companies, the links for which can
+                        be found in my resume file.
+                    </p>
+                </div>
+                
+            </section>
+            <section id="spannerSection">
+                <div id="spannerHeading">
+                    <p>Select different options from the spanner to view different projects</p>
+                </div>
+                <div id="spannerDisplay">
+                    <select name="spanner" id="spanner" onchange="spannerClicked(this)">
+                        <option value="https://editor.p5js.org/shivam/full/SybxpUIZ4" id="mazeMaker">Maze Maker</option>
+                        <option value="https://editor.p5js.org/shivam/full/Bw41_v_kX" id="fractalTree">Fractal Tree</option>
+                        <option value="https://editor.p5js.org/shivam/full/cVKLVxmFNK" id="mineCraft">Mine Craft</option>
+                    </select>
+                </div>
+            </section>
+
+            <section id="workSection">
+                <div id="workContentHolder">
+                    <iframe src="https://editor.p5js.org/shivam/full/SybxpUIZ4" class="iFrame" id="iFrame" value="HI!!!!"></iframe>
+                </div>
+                <div id="workTextHolder">
+                    <p id="workTextHeading">Maze Maker</p>
+                    <br>
+                    <p id="workTextContent">This is a project that I had made just for myself.
+                        The Maze Maker block starts from the top left corner and starts building a maze.
+                    It randomly travels to any available neighbour of the current cell. If it encounters a position, 
+                where there is no neighbour available, it traces it's way back. I have used arrays for this movement.
+                When every cell is traversed, or in other words, the maze is complete, the block returns back </p>                
+                </div>
+            </section>
+
+            <section id="videoSection">
+                <div id="videoSectionHeading">
+                    <p>This video helped me make this project.</p>
+                </div>
+                <div id="displayVideo">
+                    <iframe src="https://www.youtube.com/embed/HyK_Q5rrcr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="youtubeVideo" allowfullscreen></iframe>
+                </div>
+            </section>
+
+        </article>
+
+        <footer>
+            <p>Website designed and developed by Shivam Harjai. &copy; 2021 Shivam Harjai</p>
+        </footer>
+
+    </body>
+</html>
